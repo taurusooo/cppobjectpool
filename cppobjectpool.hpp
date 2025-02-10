@@ -126,7 +126,7 @@ namespace cppobjectpool
         // 最终处理函数
         FinalProcess m_finalProcess;
         // 当前分配的对象数量
-        std::atomic<int> m_allocedCount{0};
+        std::atomic<size_t> m_allocedCount{0};
         // 构造函数参数
         std::tuple<Args...> m_constructorArgs;
 
